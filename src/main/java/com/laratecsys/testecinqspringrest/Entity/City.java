@@ -1,31 +1,28 @@
 package com.laratecsys.testecinqspringrest.Entity;
 
 import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.List;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
-import javax.persistence.OneToMany;
-
-import com.fasterxml.jackson.annotation.JsonIgnore;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 
 @Entity
-public class Country implements Serializable {
+public class City implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
 	private Integer id;
 	private String name;
 
-	@JsonIgnore
-	@OneToMany(mappedBy = "country")
-	private List<City> citys = new ArrayList<>();
+	@ManyToOne
+	@JoinColumn(name = "country_id")
+	private Country country;
 
-	public Country() {
+	public City() {
 	}
 
-	public Country(Integer id, String name) {
+	public City(Integer id, String name) {
 		super();
 		this.id = id;
 		this.name = name;
@@ -47,12 +44,12 @@ public class Country implements Serializable {
 		this.name = name;
 	}
 
-	public List<City> getCitys() {
-		return citys;
+	public Country getCountry() {
+		return country;
 	}
 
-	public void setCitys(List<City> citys) {
-		this.citys = citys;
+	public void setCountry(Country country) {
+		this.country = country;
 	}
 
 	@Override
@@ -71,7 +68,7 @@ public class Country implements Serializable {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		Country other = (Country) obj;
+		City other = (City) obj;
 		if (id == null) {
 			if (other.id != null)
 				return false;
