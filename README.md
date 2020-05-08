@@ -17,9 +17,9 @@ Windows:
 Abra o CMD, acesse a pasta onde clonou o projeto utilizando o comando 'cd', 
 no meu caso fica na pasta usuários na pasta workspace do eclipe:
 
-C:\Users\tiago.ribeiro.safetycontrol.000>cd eclipse-workspace/teste-cinq-spring-rest
+>**cd eclipse-workspace/teste-cinq-spring-rest**
 
-Verifique se o arquivo 'target' está no projeto:
+Verifique se o arquivo **'target'** está no projeto:
 
 C:\Users\tiago.ribeiro.safetycontrol.000\eclipse-workspace\teste-cinq-spring-rest>dir
  O volume na unidade C não tem nome.
@@ -44,8 +44,7 @@ C:\Users\tiago.ribeiro.safetycontrol.000\eclipse-workspace\teste-cinq-spring-res
                8 arquivo(s)         22.652 bytes
                6 pasta(s)    1.651.359.744 bytes disponíveis
 
-Agora executa o Serviço utilizando o comando Java:
+Agora executa o Serviço utilizando o comando Java
 
-**negrito**
-java -jar target\spring-jpa-jersey-2.2.7.RELEASE.jar
+**java -jar target\spring-jpa-jersey-2.2.7.RELEASE.jar**
 
