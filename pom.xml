@@ -10,9 +10,8 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.laratecsys.teste-cinq-spring-rest</groupId>
-	<artifactId>teste-cinq-spring-rest</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<name>teste-cinq-spring-rest</name>
+	<artifactId>spring-jpa-jersey</artifactId>
+	<name>spring-jpa-jersey</name>
 	<description>Meu teste para entrar na CINQ</description>
 
 	<properties>

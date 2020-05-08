@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 import com.laratecsys.testecinqspringrest.Entity.Country;
 import com.laratecsys.testecinqspringrest.Repositories.CountryRepositories;
 import com.laratecsys.testecinqspringrest.Services.exceptions.ObjectNotFoundException;
-import com.sun.xml.internal.ws.util.StringUtils;
+
 
 @Service
 public class CountryService {
@@ -26,7 +26,7 @@ public class CountryService {
 	
 	public Country findByName(String name) 
 	{
-		Optional<Country> obj = countryRepositories.findByNameLike("%"+StringUtils.capitalize(name)+"%");
+		Optional<Country> obj = countryRepositories.findByNameLike("%"+name+"%");
 		return obj.orElseThrow(() -> new ObjectNotFoundException(
 				"Pais não encontrador. Pais:" + name+ ", Tipo:" + Country.class.getName(), null));
 		
