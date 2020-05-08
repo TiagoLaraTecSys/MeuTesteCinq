@@ -46,5 +46,6 @@ C:\Users\tiago.ribeiro.safetycontrol.000\eclipse-workspace\teste-cinq-spring-res
 
 Agora executa o Serviço utilizando o comando Java:
 
-C:\Users\tiago.ribeiro.safetycontrol.000\eclipse-workspace\teste-cinq-spring-rest>java -jar target\spring-jpa-jersey-2.2.7.RELEASE.jar
+**negrito**
+java -jar target\spring-jpa-jersey-2.2.7.RELEASE.jar
 
