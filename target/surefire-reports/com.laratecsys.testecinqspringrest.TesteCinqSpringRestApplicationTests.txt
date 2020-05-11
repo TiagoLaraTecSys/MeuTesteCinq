@@ -1,4 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: com.laratecsys.testecinqspringrest.TesteCinqSpringRestApplicationTests
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.338 s - in com.laratecsys.testecinqspringrest.TesteCinqSpringRestApplicationTests
+Tests run: 2, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 16.565 s <<< FAILURE! - in com.laratecsys.testecinqspringrest.TesteCinqSpringRestApplicationTests
+findByName  Time elapsed: 0.221 s  <<< ERROR!
+java.lang.NullPointerException
+	at com.laratecsys.testecinqspringrest.TesteCinqSpringRestApplicationTests.findByName(TesteCinqSpringRestApplicationTests.java:30)
+
